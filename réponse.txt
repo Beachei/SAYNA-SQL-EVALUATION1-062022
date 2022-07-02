@@ -1,0 +1,54 @@
+
+ 
+			Bonjour a vous je vous présente ci dessous mon base de donné.
+ 
+Tout d'abord les changement:
+changement sur la table "livre" qui comptait 32 tuples dont maintenant il compte 18 et 
+aussi des colones qui comptait que 3 colone dont maintenant il compte 5.
+- Le premier changement qui est de trier les doublons qui est du au doublons 
+des editeurs et les numero des oeuvres qui comptait 5.
+- Le deuxième changement qui est l'ajout des nouveaux colones est du 
+au plusieur exemplaire des oeuvres par plusieur editeur.
+
+ 
+changement sur la table "emprunter" qui comptait 5 colone dont maintenant il compte 11.
+- Ce changement est du au tableau "en_retard" pour compter les annés, les mois et les jours
+de retard.
+- le 11 éme colone "id_Em" est pour arrangé l'ordre des emprun.
+- changement dans les valeurs de la dateEmp et dateRet qui était en revers dans la colone "id_Em" = 5;
+ 
+deuxiémement l'ajout des nouveaux tableau:
+ Ajout du tableau "le et lr" qui signifie "le" = livre emprunté et "lr" = livre rendue
+ Ajout du tableau "livre_e_auteur et livre_e_editeur" qui signifie "livre_e_auteur" = livre emprunté par auteur
+et "livre_e_editeur" = livre emprunté par editeur
+ Ajout du tableau "livre_e" qui signifie livre emprunté celle ci est la réponse de votre question
+N° 7 et N° 9.
+
+ Et derniérement le fonctionement et l'explication des petit acronyme oublier :
+ Pour le tableau "en_retard" c'est un peu compliqué et il y a encore quelque defaut.
+- Le calcule de ce tableau c'est fait dans la table emprunter.
+ La colone "anne_d'_emprun" signifie le nombre d'anné ou le livre a été emprunté
+ celui ci est le resultat de calcul des annes de rendu des livre soustrait par l'anné d'emprun et
+ le même jusqu'au jour_d'_emprun qui signifie également la même chose que celle de l'anné_d'_emprun
+ mais l'anne est changé en jour.
+- Le jour de retard est le resultat de calcule de soustraction du durémax et le resultat du jour_d'_emprun.
+- les tables "le et lr" stock quelque donné des livres emprunté et rendue.
+ 
+ 		acronyme:
+dans la table livre_e "Nom_emp" = Nombre de livre emprunté
+		       "N_O" = Numero oeuvre
+dans la table livre_e_auteur "aut" = auteur 
+dans la table livre_e_editeur "editr" = editeur
+
+{réponse constatation et quelque question de l'evaluation:}
+7- Pour les livres empruntés en septembre 2009 il n'y en a pas car tous les livres en commencé a être emprunté de l'anné 2018.
+13,14- J'ai accépté les essay d'emprun des livre N° 23 et 29 avant qui est maintenant livre N° 7 et 1 à Cyril FREDERIC car 
+le livre 7 est éditer par 2 éditeur qui signifie que nous avons 2 emplaire c'est pour cela que j'ai accépter cette
+requête même si le livre N° 23 était déja emprunté par Martine CROZIER et pour le N° 29, celui ci ne peut être emprunté car
+ il y a déja d'emprunt en cours.
+alors j'ai accépté.
+15,16- Pour l'auteur du livre "Voyage qu bout de la nuit" est Louis-Ferdinand CELINE et pour "Narcisse et Golmund" est Hermann HESSE.
+17,18- les Adhérents actuelement en retard sont le N°27 et 22 avec les livres 1 et 11.
+
+				Désolé pour la mise en forme de mon élément txt il n'y a ny couleur ou de surlignage pour vous aider a 
+			mieux comprendre ce qui est écrits.
